@@ -11,17 +11,25 @@ class CepController{
         cepRequest.addEventListener('load', ()=>{
 
             if(cepRequest.status != 200){
-                throw "Fail request"
+                let requestProblem = document.querySelector('#requestProblem')
+                requestProblem.classList.remove('hidden')
+                setTimeout(()=>{requestProblem.classList.add('hidden')}, 5000)
             } else {
 
                 let locationJSON = JSON.parse(cepRequest.responseText)
-                console.log(locationJSON)
-                let locationModel = new CepModels(locationJSON.localidade, locationJSON.logradouro, 
-                    locationJSON.bairro, locationJSON.uf)
+                if(!(locationJSON.localidade === undefined)){
+                    let locationModel = new CepModels(locationJSON.localidade, locationJSON.logradouro, 
+                        locationJSON.bairro, locationJSON.uf)
 
-                console.log(locationModel.location)
-                CepView.completeLocation(locationModel.location)
-
+                    CepView.completeLocation(locationModel.location)
+                
+                } else {
+                    let invalidCep = document.querySelector('#invalidCep')
+                    invalidCep.classList.remove('hidden')
+                    setTimeout(()=>{invalidCep.classList.add('hidden')}, 5000)
+                    cepInput.value = ""
+                }
+                
             }
 
 
