@@ -1,6 +1,5 @@
-let rg = document.querySelector('#inputRG')
-rg.addEventListener('keyup', (event)=>{
-    alert(event.key)
+let rgInput = document.querySelector('#inputRG')
+rgInput.addEventListener('keyup', (event)=>{
     if(!(event.key=='Backspace' || event.key=='Delete')){
         if(event.target.value.length==2 || event.target.value.length==6 ){
             event.target.value += "."
