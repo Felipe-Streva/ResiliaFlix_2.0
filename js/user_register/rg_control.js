@@ -7,4 +7,4 @@ rgInput.addEventListener('keyup', (event)=>{
             event.target.value += "-"
         }
     }
-})
+})//Formating RG
