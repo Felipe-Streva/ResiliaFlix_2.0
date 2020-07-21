@@ -17,7 +17,7 @@ function validationPassword(){
 
     return false
 }
-let form = document.querySelector('form')
+let form = document.querySelector('#form-register')
 form.addEventListener('submit', function(event){
     event.preventDefault()
     event.stopPropagation()

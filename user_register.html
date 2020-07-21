@@ -69,16 +69,16 @@
                     </li>
                 </ul>
 
-                <form class="form-inline my-2 my-lg-0 ">
+                <div>
                     <button class="btn btn-outline-success my-2 my-sm-0 " type="submit ">Search</button>
-                </form>
+                </div>
             </div>
         </nav>
 
     </header>
 
     <main class="container ">
-        <form>
+        <form id="form-register">
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label for="inputName">Name</label>
@@ -139,7 +139,7 @@
                     <label class="form-check-label" for="gridCheck">I agree</label>
                 </div>
             </div>
-            <button type="submit" class="btn btn-primary" id="submitButton" onClick="return validationPassword()">Register</button>
+            <button type="submit" class="btn btn-primary" id="submitButton" onclick="return validationPassword()">Register</button>
             <p class="alert alert-danger hidden mt-3" role="alert" id="passwordFail">Different Passwords</p>
             <p class="alert alert-success hidden mt-3" role="alert" id="sucessRegister">Successfully Registered</p>
             <p class="alert alert-danger hidden mt-3" role="alert" id="invalidCep">Invalid CEP</p>
