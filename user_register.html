@@ -78,72 +78,72 @@
     </header>
 
     <main class="container ">
-        form>
-        <div class="form-row">
-            <div class="form-group col-md-6">
-                <label for="inputName">Name</label>
-                <input type="text" class="form-control" id="inputName" required placeholder="Darth Vader">
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputName">Name</label>
+                    <input type="text" class="form-control" id="inputName" required placeholder="Darth Vader">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputEmail4">Email</label>
+                    <input type="email" class="form-control" id="inputEmail4" required placeholder="ironman@resiliaflix.com">
+                </div>
             </div>
-            <div class="form-group col-md-6">
-                <label for="inputEmail4">Email</label>
-                <input type="email" class="form-control" id="inputEmail4" required placeholder="ironman@resiliaflix.com">
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="inputRG">RG</label>
+                    <input type="text" class="form-control" id="inputRG" required placeholder="00.000.000-0" pattern="^\d{2}.\d{3}.\d{3}-\d{1}$" maxlength="12">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="inputPassword4">Password</label>
+                    <input type="password" class="form-control" id="inputPassword4" required placeholder="4 8 15 16 23 42">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="inputConfirmPassword4">Confirm Password</label>
+                    <input type="password" class="form-control" id="inputConfirmPassword4" required placeholder="4 8 15 16 23 42">
+                </div>
             </div>
-        </div>
-        <div class="form-row">
-            <div class="form-group col-md-4">
-                <label for="inputRG">RG</label>
-                <input type="text" class="form-control" id="inputRG" required placeholder="00.000.000-0" pattern="^\d{2}.\d{3}.\d{3}-\d{1}$" maxlength="12">
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="inputCEP">CEP</label>
+                    <input type="text" class="form-control" id="inputCEP" required placeholder="00.000-000" pattern="^\d{2}.\d{3}-\d{3}$" maxlength="10">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="inputCity">City</label>
+                    <input type="text" class="form-control" id="inputCity" required placeholder="Gotham City" readonly>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="inputState">State</label>
+                    <input type="text" class="form-control" id="inputState" required readonly>
+                </div>
+
             </div>
-            <div class="form-group col-md-4">
-                <label for="inputPassword4">Password</label>
-                <input type="password" class="form-control" id="inputPassword4" required placeholder="4 8 15 16 23 42">
-            </div>
-            <div class="form-group col-md-4">
-                <label for="inputConfirmPassword4">Confirm Password</label>
-                <input type="password" class="form-control" id="inputConfirmPassword4" required placeholder="4 8 15 16 23 42">
-            </div>
-        </div>
-        <div class="form-row">
-            <div class="form-group col-md-4">
-                <label for="inputCEP">CEP</label>
-                <input type="text" class="form-control" id="inputCEP" required placeholder="00.000-000" pattern="^\d{2}.\d{3}-\d{3}$" maxlength="10">
-            </div>
-            <div class="form-group col-md-4">
-                <label for="inputCity">City</label>
-                <input type="text" class="form-control" id="inputCity" required placeholder="Gotham City" readonly>
-            </div>
-            <div class="form-group col-md-4">
-                <label for="inputState">State</label>
-                <input type="text" class="form-control" id="inputState" required readonly>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputAddress">Address</label>
+                    <input type="text" class="form-control" id="inputAddress" required placeholder="Street, Av, Road, Galaxy" readonly>
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="inputAddress2">Number</label>
+                    <input type="text" class="form-control" id="inputAddress2" required placeholder="666">
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="inputDistrict">District</label>
+                    <input type="text" class="form-control" id="inputDistrict" required placeholder="District 9" readonly>
+                </div>
             </div>
 
-        </div>
-        <div class="form-row">
-            <div class="form-group col-md-6">
-                <label for="inputAddress">Address</label>
-                <input type="text" class="form-control" id="inputAddress" required placeholder="Street, Av, Road, Galaxy" readonly>
+            <div class="form-group">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck" required>
+                    <label class="form-check-label" for="gridCheck">I agree</label>
+                </div>
             </div>
-            <div class="form-group col-md-3">
-                <label for="inputAddress2">Number</label>
-                <input type="text" class="form-control" id="inputAddress2" required placeholder="666">
-            </div>
-            <div class="form-group col-md-3">
-                <label for="inputDistrict">District</label>
-                <input type="text" class="form-control" id="inputDistrict" required placeholder="District 9" readonly>
-            </div>
-        </div>
-
-        <div class="form-group">
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="gridCheck" required>
-                <label class="form-check-label" for="gridCheck">I agree</label>
-            </div>
-        </div>
-        <button type="submit" class="btn btn-primary" id="submitButton" onClick="return validationPassword()">Register</button>
-        <p class="alert alert-danger hidden mt-3" role="alert" id="passwordFail">Different Passwords</p>
-        <p class="alert alert-success hidden mt-3" role="alert" id="sucessRegister">Successfully Registered</p>
-        <p class="alert alert-danger hidden mt-3" role="alert" id="invalidCep">Invalid CEP</p>
-        <p class="alert alert-danger hidden mt-3" role="alert" id="requestProblem">Request to ViaCEP fail, try again</p>
+            <button type="submit" class="btn btn-primary" id="submitButton" onClick="return validationPassword()">Register</button>
+            <p class="alert alert-danger hidden mt-3" role="alert" id="passwordFail">Different Passwords</p>
+            <p class="alert alert-success hidden mt-3" role="alert" id="sucessRegister">Successfully Registered</p>
+            <p class="alert alert-danger hidden mt-3" role="alert" id="invalidCep">Invalid CEP</p>
+            <p class="alert alert-danger hidden mt-3" role="alert" id="requestProblem">Request to ViaCEP fail, try again</p>
         </form>
     </main>
     <footer>
