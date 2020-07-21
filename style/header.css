@@ -1,0 +1,13 @@
+.navbar.navbar-expand-lg.navbar-light {
+    background: #2d2b47;
+}
+
+.btn.btn-outline-success.my-2.my-sm-0 {
+    background: #FF4576;
+    color: #1b172d;
+    border-color: #FF4576;
+}
+
+.btn.btn-outline-success.my-2.my-sm-0:hover {
+    color: #1b172d;
+}

@@ -1,0 +1,27 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background: #2d2b47;
+    margin: 0%;
+    width: 100%;
+    height: auto;
+}
+
+.icone {
+    display: flex;
+    margin: 0px 20px 0px 5px;
+    width: 30px;
+    color: #1b172d;
+}
+
+.copy {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-family: Arial;
+    margin: 0%;
+    background: #2d2b47;
+    Color: #FF4576;
+    width: 100%;
+}
