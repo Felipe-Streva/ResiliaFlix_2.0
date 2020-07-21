@@ -1,13 +1,41 @@
-.navbar.navbar-expand-lg.navbar-light {
-    background: #2d2b47;
+:root {
+    --bg-color: #1b172d;
+    --details-color: #ff4576;
+    --sub-menus: #2d2b47;
+    --text-color: #26223D;
+    --text2-color: #fff;
+    /*
+    Ordem da paleta:
+    #2D2B47;
+    #26223D;
+    #1b172d;
+    #ff4576;
+    #fff;
+    var(--sub-menus);
+    var(--text-color);
+    var(--bg-color);
+    var(--details-color);
+    var(--text2-color)*/
 }
 
+
+/*
+.navbar.navbar-expand-lg.navbar-light {
+    background: var(--bg-color);
+}*/
+
 .btn.btn-outline-success.my-2.my-sm-0 {
-    background: #FF4576;
-    color: #1b172d;
-    border-color: #FF4576;
+    background: var(--details-color);
+    color: var(--text2-color);
+    border-color: var(--text2-color);
+    ;
 }
 
 .btn.btn-outline-success.my-2.my-sm-0:hover {
-    color: #1b172d;
+    color: var(--text2-color);
+}
+
+.navbar-light .navbar-toggler {
+    color: var(--details-color);
+    border-color: var(--details-color);
 }
