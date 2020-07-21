@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 :root {
     --bg-color: #1b172d;
     --details-color: #ff4576;
@@ -20,12 +25,15 @@
 
 .footer {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: flex-end;
     background: var(--bg-color);
     margin: 0%;
     width: 100%;
     height: auto;
+    position: absolute;
+    bottom: 0;
 }
 
 .icone {
@@ -44,5 +52,4 @@
     background: var(--bg-color);
     Color: var(--details-color);
     width: 100%;
-    height: auto;
 }

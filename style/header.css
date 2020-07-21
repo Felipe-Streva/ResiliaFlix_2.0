@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 :root {
     --bg-color: #1b172d;
     --details-color: #ff4576;
