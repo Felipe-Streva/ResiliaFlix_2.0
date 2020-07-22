@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,22 +12,70 @@
 </head>
 
 <body>
-        <!--input-->
+    <header>
+        <!-- Navbar content -->
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: var(--bg-color);;">
+            <!-- Image and text -->
+            <a class=" navbar-brand " href="# ">
+                <img src="assets/logo_1.jpeg " width="80 " height="50 " class="d-inline-block align-top " alt=" " loading="lazy ">
+                <!--"ResiliaFlix "-->
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto ">
+                    <li class="nav-item active ">
+                        <a class="navbar-brand " href="# ">Home</a>
+                    </li>
+                    <li class="nav-item active ">
+                        <a class="nav-link " href="# ">Login <span class="sr-only ">(current)</span></a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link " href="# ">Register</a>
+                    </li>
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle " href="# " id="navbarDropdown " role="button " data-toggle="dropdown " aria-haspopup="true " aria-expanded="false ">
+                        Category
+                      </a>
+                        <div class="dropdown-menu " aria-labelledby="navbarDropdown ">
+                            <a class="dropdown-item " href="# ">Action</a>
+                            <a class="dropdown-item " href="# ">Thriller</a>
+                            <div class="dropdown-divider "></div>
+                            <a class="dropdown-item " href="# ">Horror</a>
+                            <a class="dropdown-item " href="# ">Comedy</a>
+
+                        </div>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link " href="# ">Contato</a>
+                    </li>
+                </ul>
+
+                <div>
+                    <button class="btn btn-outline-success my-2 my-sm-0 " type="submit ">Search</button>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <!--input-->
     <main>
         <form>
-            <div class="container"> 
+            <div class="container">
                 <h1 class="title text-center pt-5">Enter</h1>
-                <div class= "row  justify-content-center">
+                <div class="row  justify-content-center">
                     <div class="col-4">
                         <div class="form-group pt-4">
                             <label for="exampleInputEmail1">Email address</label>
                             <input type="email" class="form-control" id="exampleInputEmail1" placeholder="@example.com" aria-describedby="emailHelp">
                         </div>
-                    </div> 
+                    </div>
                 </div>
 
                 <div class="row  justify-content-center">
-                    <div class="col-4"> 
+                    <div class="col-4">
                         <div class="form-group">
                             <label for="exampleInputPassword1">Password</label>
                             <input type="password" class="form-control" id="exampleInputPassword1" placeholder="123456">
@@ -35,29 +84,29 @@
                 </div>
 
                 <div>
-                    <div class="row  justify-content-center"> 
+                    <div class="row  justify-content-center">
                         <div class="col-4">
                             <div class="form-group pt-2">
                                 <button type="submit" class="btn btn-primary btn btn-primary btn-lg btn-block">Enter</button>
                             </div>
                         </div>
                     </div>
-                </div> 
+                </div>
 
-                <div class="row  justify-content-center">  
-                    <div class="col-2">  
+                <div class="row  justify-content-center">
+                    <div class="col-2">
                         <div class="form-group form-check">
                             <input type="checkbox" class="form-check-input" id="exampleCheck1">
                             <label class="form-check-label" for="exampleCheck1">Remember Me</label>
                         </div>
                     </div>
-  
+
                     <div class="col-2">
                         <div class="form-group">
-                            <a href="remember_pass.html" class="forgotPassword">Forgot Password?</a>   
+                            <a href="remember_pass.html" class="forgotPassword">Forgot Password?</a>
                         </div>
-                    </div>       
-                </div> 
+                    </div>
+                </div>
         </form>
     </main>
 
@@ -65,5 +114,17 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    <footer>
+        <div class="footer">
+            <a href="#"><img src="assets/iconetwitter.png" id="twitter" class="icone"></a>
+            <a href="#"><img src="assets/iconeface.png" id="facebook" class="icone"></a>
+            <a href="#"><img src="assets/iconeyou.png" id="youtube" class="icone"></a>
+            <a href="#"><img src="assets/iconeinsta.png" id="instagram" class="icone"></a>
+
+            <span class="copy">&copy; ResiliaFlix_2020 </span>
+        </div>
+    </footer>
 </body>
+
 </html>

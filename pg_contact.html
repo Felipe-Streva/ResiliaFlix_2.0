@@ -7,8 +7,7 @@
 
     <title>Contato - ResiliaFlix</title>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="style/header.css">
     <link rel="stylesheet" href="style/footer.css">
     <link rel="stylesheet" href="style/pgContato.css">
@@ -16,7 +15,54 @@
 
 <body>
 
-    <header></header>
+    <header>
+        <!-- Navbar content -->
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: var(--bg-color);;">
+            <!-- Image and text -->
+            <a class=" navbar-brand " href="# ">
+                <img src="assets/logo_1.jpeg " width="80 " height="50 " class="d-inline-block align-top " alt=" " loading="lazy ">
+                <!--"ResiliaFlix "-->
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto ">
+                    <li class="nav-item active ">
+                        <a class="navbar-brand " href="# ">Home</a>
+                    </li>
+                    <li class="nav-item active ">
+                        <a class="nav-link " href="# ">Login <span class="sr-only ">(current)</span></a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link " href="# ">Register</a>
+                    </li>
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle " href="# " id="navbarDropdown " role="button " data-toggle="dropdown " aria-haspopup="true " aria-expanded="false ">
+                        Category
+                      </a>
+                        <div class="dropdown-menu " aria-labelledby="navbarDropdown ">
+                            <a class="dropdown-item " href="# ">Action</a>
+                            <a class="dropdown-item " href="# ">Thriller</a>
+                            <div class="dropdown-divider "></div>
+                            <a class="dropdown-item " href="# ">Horror</a>
+                            <a class="dropdown-item " href="# ">Comedy</a>
+
+                        </div>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link " href="# ">Contato</a>
+                    </li>
+                </ul>
+
+                <div>
+                    <button class="btn btn-outline-success my-2 my-sm-0 " type="submit ">Search</button>
+                </div>
+            </div>
+        </nav>
+
+    </header>
 
     <main>
         <div class="container">
@@ -76,7 +122,16 @@
         </div>
     </main>
 
-    <footer></footer>
+    <footer>
+        <div class="footer">
+            <a href="#"><img src="assets/iconetwitter.png" id="twitter" class="icone"></a>
+            <a href="#"><img src="assets/iconeface.png" id="facebook" class="icone"></a>
+            <a href="#"><img src="assets/iconeyou.png" id="youtube" class="icone"></a>
+            <a href="#"><img src="assets/iconeinsta.png" id="instagram" class="icone"></a>
+
+            <span class="copy">&copy; ResiliaFlix_2020 </span>
+        </div>
+    </footer>
 
 </body>
 
