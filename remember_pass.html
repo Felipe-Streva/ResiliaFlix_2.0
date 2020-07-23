@@ -13,47 +13,47 @@
 <body>
     <header>
         <!-- Navbar content -->
-        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: var(--bg-color);">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color:var(--bg-color)">
             <!-- Image and text -->
-            <a class=" navbar-brand " href="# ">
-                <img src="assets/logo_1.jpeg " width="80 " height="50 " class="d-inline-block align-top " alt=" " loading="lazy ">
+            <a class=" navbar " href="# ">
+                <img src="assets/logo.png " width="100 " height="100 " class="d-inline-block align-top " alt=" " loading="lazy ">
                 <!--"ResiliaFlix "-->
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler " type="button " data-toggle="collapse " data-target="#navbarSupportedContent " aria-controls="navbarSupportedContent " aria-expanded="false " aria-label="Toggle navigation ">
+                  <span class="navbar-toggler-icon "></span>
                 </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent ">
                 <ul class="navbar-nav mr-auto ">
                     <li class="nav-item active ">
-                        <a class="navbar-brand " href="# ">Home</a>
+                        <a class="nav-link " href="home.html " style="color:var(--text2-color)">Home</a>
                     </li>
                     <li class="nav-item active ">
-                        <a class="nav-link " href="# ">Login <span class="sr-only ">(current)</span></a>
+                        <a class="nav-link " href="paginaLogin.html " style="color:var(--text2-color)">Login </a>
                     </li>
-                    <li class="nav-item ">
-                        <a class="nav-link " href="# ">Register</a>
+                    <li class="nav-item active ">
+                        <a class="nav-link " href="user_register.html " style="color:var(--text2-color)">Register</a>
                     </li>
-                    <li class="nav-item dropdown ">
-                        <a class="nav-link dropdown-toggle " href="# " id="navbarDropdown " role="button " data-toggle="dropdown " aria-haspopup="true " aria-expanded="false ">
+                    <li class="nav-item active dropdown ">
+                        <a class="nav-link dropdown-toggle " href="pag_category.html " id="navbarDropdown " role="button " data-toggle="dropdown " aria-haspopup="true " aria-expanded="false " style="color:var(--text2-color)">
                         Category
                       </a>
                         <div class="dropdown-menu " aria-labelledby="navbarDropdown ">
-                            <a class="dropdown-item " href="# ">Action</a>
-                            <a class="dropdown-item " href="# ">Thriller</a>
-                            <div class="dropdown-divider "></div>
-                            <a class="dropdown-item " href="# ">Horror</a>
-                            <a class="dropdown-item " href="# ">Comedy</a>
+                            <a class="dropdown-item " href="pg_action.html ">Action</a>
+                            <a class="dropdown-item " href="pg_triller.html ">Thriller</a>
+                            <a class="dropdown-item " href="pg_horror.html ">Horror</a>
+                            <a class="dropdown-item " href="pg_comedy.html ">Comedy</a>
 
                         </div>
                     </li>
-                    <li class="nav-item ">
-                        <a class="nav-link " href="# ">Contato</a>
+                    <li class="nav-item active ">
+                        <a class="nav-link " href="pg_contact.html " style="color:var(--text2-color)">Contato</a>
                     </li>
                 </ul>
 
                 <div>
-                    <button class="btn btn-outline-success my-2 my-sm-0 " type="submit ">Search</button>
+                    <button class="btn btn-outline-success my-2 my-sm-0 " style="border-color:var(--text2-color);color:var(--text2-color);background-color:var(--bg-color); " type="submit " onclick="window.location.href='pg_search.html' "><img src="assets/search.png
+                        " width="40 " height="40 " class="d-inline-block align-top " alt=" " loading="lazy "></button>
                 </div>
             </div>
         </nav>
@@ -89,13 +89,13 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
     <footer>
-        <div class="footer">
-            <a href="#"><img src="assets/iconetwitter.png" id="twitter" class="icone"></a>
-            <a href="#"><img src="assets/iconeface.png" id="facebook" class="icone"></a>
-            <a href="#"><img src="assets/iconeyou.png" id="youtube" class="icone"></a>
-            <a href="#"><img src="assets/iconeinsta.png" id="instagram" class="icone"></a>
+        <div class="footer " style="background-color:var(--bg-color); ">
+            <a href="https://twitter.com/login?lang=pt"><img src="assets/iconetwitter.png " id="twitter " class="icone "></a>
+            <a href="https://www.facebook.com/resilia.br/ "><img src="assets/iconeface.png " id="facebook " class="icone "></a>
+            <a href="https://accounts.google.com/ServiceLogin/ "><img src="assets/iconeyou.png " id="youtube " class="icone "></a>
+            <a href="https://www.instagram.com/resilia.br/"><img src="assets/iconeinsta.png " id="instagram " class="icone "></a>
 
-            <span class="copy">&copy; ResiliaFlix_2020 </span>
+            <span class="copy " style="color: var(--details-color); ">&copy; ResiliaFlix_2020 </span>
         </div>
     </footer>
 </body>

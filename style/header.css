@@ -19,21 +19,5 @@
 }
 
 header {
-    position: relative;
-}
-
-.btn.btn-outline-success.my-2.my-sm-0 {
-    background: var(--details-color);
-    color: var(--text2-color);
-    border-color: var(--text2-color);
-    ;
-}
-
-.btn.btn-outline-success.my-2.my-sm-0:hover {
-    color: var(--text2-color);
-}
-
-.navbar-light .navbar-toggler {
-    color: var(--details-color);
-    border-color: var(--details-color);
+    margin: 0% 0% 8% 0%;
 }
