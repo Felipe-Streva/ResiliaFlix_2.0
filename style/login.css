@@ -1,3 +1,7 @@
 .forgotPassword{
     margin-left: 35px;
 }
+
+.hidden{
+    display: none;
+}
