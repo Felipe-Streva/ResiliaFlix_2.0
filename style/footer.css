@@ -1,26 +1,24 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
 .footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-end;
-    background: var(--bg-color);
     margin: 0%;
     width: 100%;
     height: auto;
-    position: absolute;
+    position: fixed;
     bottom: 0;
 }
 
 .icone {
     display: flex;
-    margin: 0px 20px 0px 5px;
+    margin: 3px 20px 0px 5px;
     width: 30px;
-    color: var(--details-color);
+}
+
+.icone:hover {
+    height: 35px;
+    width: 35px;
 }
 
 .copy {
@@ -29,7 +27,5 @@
     align-items: flex-end;
     font-family: Arial;
     margin: 0%;
-    background: var(--bg-color);
-    Color: var(--details-color);
     width: 100%;
 }

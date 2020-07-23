@@ -1,8 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
 :root {
     --bg-color: #1b172d;
     --details-color: #ff4576;
@@ -23,24 +18,6 @@
     var(--text2-color)*/
 }
 
-
-/*
-.navbar.navbar-expand-lg.navbar-light {
-    background: var(--bg-color);
-}*/
-
-.btn.btn-outline-success.my-2.my-sm-0 {
-    background: var(--details-color);
-    color: var(--text2-color);
-    border-color: var(--text2-color);
-    ;
-}
-
-.btn.btn-outline-success.my-2.my-sm-0:hover {
-    color: var(--text2-color);
-}
-
-.navbar-light .navbar-toggler {
-    color: var(--details-color);
-    border-color: var(--details-color);
+header {
+    margin: 0% 0% 8% 0%;
 }

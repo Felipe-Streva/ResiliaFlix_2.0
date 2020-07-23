@@ -1,23 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <title>Home - ResiliaFlix</title>
 
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-        <link rel="stylesheet" href="style/header.css">
-        <link rel="stylesheet" href="style/footer.css">
-        <link rel="stylesheet" href="style/home.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <script defer src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script defer src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    </head>
-    <body>
-		<!--Start main content-->
-		<main>
+    <title>Home - ResiliaFlix</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="style/home.css">
+
+    <script defer src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  
+    <header>
+        <!-- Navbar content -->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color:var(--bg-color)">
+            <!-- Image and text -->
+            <a class=" navbar " href="# ">
+                <img src="assets/logo.png " width="100 " height="100 " class="d-inline-block align-top " alt=" " loading="lazy ">
+                <!--"ResiliaFlix "-->
+            </a>
+            <button class="navbar-toggler " type="button " data-toggle="collapse " data-target="#navbarSupportedContent " aria-controls="navbarSupportedContent " aria-expanded="false " aria-label="Toggle navigation ">
+                  <span class="navbar-toggler-icon "></span>
+                </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent ">
+                <ul class="navbar-nav mr-auto ">
+                    <li class="nav-item active ">
+                        <a class="nav-link " href="home.html " style="color:var(--text2-color)">Home</a>
+                    </li>
+                    <li class="nav-item active ">
+                        <a class="nav-link " href="paginaLogin.html " style="color:var(--text2-color)">Login </a>
+                    </li>
+                    <li class="nav-item active ">
+                        <a class="nav-link " href="user_register.html " style="color:var(--text2-color)">Register</a>
+                    </li>
+                    <li class="nav-item active dropdown ">
+                        <a class="nav-link dropdown-toggle " href="pag_category.html " id="navbarDropdown " role="button " data-toggle="dropdown " aria-haspopup="true " aria-expanded="false " style="color:var(--text2-color)">
+                        Category
+                      </a>
+                        <div class="dropdown-menu " aria-labelledby="navbarDropdown ">
+                            <a class="dropdown-item " href="pg_action.html ">Action</a>
+                            <a class="dropdown-item " href="pg_triller.html ">Thriller</a>
+                            <a class="dropdown-item " href="pg_horror.html ">Horror</a>
+                            <a class="dropdown-item " href="pg_comedy.html ">Comedy</a>
+
+                        </div>
+                    </li>
+                    <li class="nav-item active ">
+                        <a class="nav-link " href="pg_contact.html " style="color:var(--text2-color)">Contato</a>
+                    </li>
+                </ul>
+
+                <div>
+                    <button class="btn btn-outline-success my-2 my-sm-0 " style="border-color:var(--text2-color);color:var(--text2-color);background-color:var(--bg-color); " type="submit " onclick="window.location.href='pg_search.html' "><img src="assets/search.png
+                        " width="40 " height="40 " class="d-inline-block align-top " alt=" " loading="lazy "></button>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+  
+    <main>
 			<!-- Start carousel-->
 			<!-- Service description and ads-->
 			<section id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -76,6 +127,16 @@
 
 			<!--End show movies and series-->
 		</main>
-		<!--End main content-->
-    </body>
+  
+    <footer>
+        <div class="footer " style="background-color:var(--bg-color); ">
+            <a href="https://twitter.com/login?lang=pt"><img src="assets/iconetwitter.png " id="twitter " class="icone "></a>
+            <a href="https://www.facebook.com/resilia.br/ "><img src="assets/iconeface.png " id="facebook " class="icone "></a>
+            <a href="https://accounts.google.com/ServiceLogin/ "><img src="assets/iconeyou.png " id="youtube " class="icone "></a>
+            <a href="https://www.instagram.com/resilia.br/"><img src="assets/iconeinsta.png " id="instagram " class="icone "></a>
+
+            <span class="copy " style="color: var(--details-color); ">&copy; ResiliaFlix_2020 </span>
+        </div>
+    </footer>
+</body>
 </html>
