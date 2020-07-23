@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,22 +17,72 @@
 </head>
 
 <body>
-        
+
+    <header>
+        <!-- Navbar content -->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color:var(--bg-color)">
+            <!-- Image and text -->
+            <a class=" navbar " href="# ">
+                <img src="assets/logo.png " width="100 " height="100 " class="d-inline-block align-top " alt=" " loading="lazy ">
+                <!--"ResiliaFlix "-->
+            </a>
+            <button class="navbar-toggler " type="button " data-toggle="collapse " data-target="#navbarSupportedContent " aria-controls="navbarSupportedContent " aria-expanded="false " aria-label="Toggle navigation ">
+                  <span class="navbar-toggler-icon "></span>
+                </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent ">
+                <ul class="navbar-nav mr-auto ">
+                    <li class="nav-item active ">
+                        <a class="nav-link " href="home.html " style="color:var(--text2-color)">Home</a>
+                    </li>
+                    <li class="nav-item active ">
+                        <a class="nav-link " href="paginaLogin.html " style="color:var(--text2-color)">Login </a>
+                    </li>
+                    <li class="nav-item active ">
+                        <a class="nav-link " href="user_register.html " style="color:var(--text2-color)">Register</a>
+                    </li>
+                    <li class="nav-item active dropdown ">
+                        <a class="nav-link dropdown-toggle " href="pag_category.html " id="navbarDropdown " role="button " data-toggle="dropdown " aria-haspopup="true " aria-expanded="false " style="color:var(--text2-color)">
+                        Category
+                      </a>
+                        <div class="dropdown-menu " aria-labelledby="navbarDropdown ">
+                            <a class="dropdown-item " href="pg_action.html ">Action</a>
+                            <a class="dropdown-item " href="pg_triller.html ">Thriller</a>
+                            <a class="dropdown-item " href="pg_horror.html ">Horror</a>
+                            <a class="dropdown-item " href="pg_comedy.html ">Comedy</a>
+
+                        </div>
+                    </li>
+                    <li class="nav-item active ">
+                        <a class="nav-link " href="pg_contact.html " style="color:var(--text2-color)">Contato</a>
+                    </li>
+                </ul>
+
+                <div>
+                    <button class="btn btn-outline-success my-2 my-sm-0 " style="border-color:var(--text2-color);color:var(--text2-color);background-color:var(--bg-color); " type="submit " onclick="window.location.href='pg_search.html' "><img src="assets/search.png
+                        " width="40 " height="40 " class="d-inline-block align-top " alt=" " loading="lazy "></button>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <!--input-->
     <main>
         <form>
-            <div class="container"> <!--input-->
+            <div class="container">
+
                 <h1 class="title text-center pt-5">Enter</h1>
-                <div class= "row  justify-content-center">
+                <div class="row  justify-content-center">
                     <div class="col-4">
                         <div class="form-group pt-4">
                             <label for="exampleInputEmail1">Email address</label>
                             <input type="email" class="form-control" id="exampleInputEmail1" placeholder="@example.com" aria-describedby="emailHelp" required>
                         </div>
-                    </div> 
+                    </div>
                 </div>
 
                 <div class="row  justify-content-center">
-                    <div class="col-4"> 
+                    <div class="col-4">
                         <div class="form-group">
                             <label for="exampleInputPassword1">Password</label>
                             <input type="password" class="form-control" id="exampleInputPassword1" placeholder="123456" required>
@@ -40,7 +91,9 @@
                 </div>
 
                 <div>
+
                     <div class="row  justify-content-center"> <!--button-->
+
                         <div class="col-4">
                             <div class="form-group pt-2">
                                 <button type="submit" class="btn btn-primary btn btn-primary btn-lg btn-block" onClick="return validateEmail()">Enter</button>
@@ -48,24 +101,42 @@
                             </div>
                         </div>
                     </div>
-                </div> 
+                </div>
+
 
                 <div class="row  justify-content-center">  <!--checkbox-->
                     <div class="col-2">  
+
                         <div class="form-group form-check">
                             <input type="checkbox" class="form-check-input" id="exampleCheck1">
                             <label class="form-check-label" for="exampleCheck1">Remember Me</label>
                         </div>
                     </div>
+
   
                     <div class="col-2"><!--link forgot password-->
+
                         <div class="form-group">
-                            <a href="remember_pass.html" class="forgotPassword">Forgot Password?</a>   
+                            <a href="remember_pass.html" class="forgotPassword">Forgot Password?</a>
                         </div>
-                    </div>       
-                </div> 
+                    </div>
+                </div>
         </form>
     </main>
 
+
+    
+    <footer>
+        <div class="footer " style="background-color:var(--bg-color); ">
+            <a href="https://twitter.com/login?lang=pt"><img src="assets/iconetwitter.png " id="twitter " class="icone "></a>
+            <a href="https://www.facebook.com/resilia.br/ "><img src="assets/iconeface.png " id="facebook " class="icone "></a>
+            <a href="https://accounts.google.com/ServiceLogin/ "><img src="assets/iconeyou.png " id="youtube " class="icone "></a>
+            <a href="https://www.instagram.com/resilia.br/"><img src="assets/iconeinsta.png " id="instagram " class="icone "></a>
+
+            <span class="copy " style="color: var(--details-color); ">&copy; ResiliaFlix_2020 </span>
+        </div>
+    </footer>
+
 </body>
+
 </html>

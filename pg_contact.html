@@ -4,20 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Remember me</title>
+
+    <title>Contato - ResiliaFlix</title>
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="style/header.css">
     <link rel="stylesheet" href="style/footer.css">
-    <link rel="stylesheet" href="style/login.css">
-
-    <script defer src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    <script defer src="js/login_pages/rememberPass.js"></script>
+    <link rel="stylesheet" href="style/pgContato.css">
 </head>
 
 <body>
-    
 
     <header>
         <!-- Navbar content -->
@@ -62,41 +58,69 @@
                 <div>
                     <button class="btn btn-outline-success my-2 my-sm-0 " style="border-color:var(--text2-color);color:var(--text2-color);background-color:var(--bg-color); " type="submit " onclick="window.location.href='pg_search.html' "><img src="assets/search.png
                         " width="40 " height="40 " class="d-inline-block align-top " alt=" " loading="lazy "></button>
-
                 </div>
             </div>
         </nav>
+
     </header>
 
     <main>
-        <form>
-            <div class="container justify-content-center">
-                <h1 class="title text-center pt-5">Remember Me</h1>
-                <div class="row  justify-content-center">
-                    <div class="col-4">
-                        <div class="form-group pt-4">
-                            <label for="exampleInputEmail1">Tell your email to send a new password.</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="@example.com" aria-describedby="emailHelp">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-3">
+                <div class="col mb-4">
+                    <div class="card h-100">
+                        <img src="assets/foto-felipe.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Felipe Streva</h5>
+                            <p class="card-text">Mechanical Engineer<br>Web Developer</p>
+                            <div class="row">
+                                <img class="icon-img" src="assets/icon-git.png">
+                                <!-- <div class="overlay">
+                                <a><img class="icon-overlay" src="assets/icon-git-pink.png"></a>
+                            </div> -->
+                            </div>
                         </div>
                     </div>
                 </div>
-
-                       <div>
-            <div class="row  justify-content-center"> 
-                <div class="col-4">
-                    <div class="form-group pt-2">
-                        <button type="submit" id="remenberMe" class="btn btn-primary btn btn-primary btn-lg btn-block" onClick="return validateEmail()">Enter</button>
-                        <p class="alert alert-danger hidden mt-3" role="alert" id="passwordFail">Incompatible address</p>
-                        <p class="alert alert-success hidden mt-3" role="alert" id="sucessRegister">Successfully Registered</p>
+                <div class="col mb-4">
+                    <div class="card h-100">
+                        <img src="assets/foto-brunna.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Brunna Mattos</h5>
+                            <p class="card-text">Computer Science Student<br>Web Developer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card h-100">
+                        <img src="assets/foto-vanessa.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Vanessa Pereira</h5>
+                            <p class="card-text">Computer Science Student<br>Web Developer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card h-100">
+                        <img src="assets/foto-thays.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Thays Martins</h5>
+                            <p class="card-text">Web Developer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card h-100">
+                        <img src="assets/foto-eduardo.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Luiz Eduardo</h5>
+                            <p class="card-text">Computer Network Technician<br>Web Developer</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div> 
-    </div>
-    </form>
-</main>
-   
-
+        </div>
+    </main>
 
     <footer>
         <div class="footer " style="background-color:var(--bg-color); ">
@@ -108,6 +132,7 @@
             <span class="copy " style="color: var(--details-color); ">&copy; ResiliaFlix_2020 </span>
         </div>
     </footer>
+
 </body>
 
 </html>
