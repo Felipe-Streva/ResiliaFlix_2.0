@@ -2,7 +2,7 @@ class SearchController{
 
     static newSearch(input){
         let request = new XMLHttpRequest()
-        request.open("GET",`http://www.omdbapi.com/?apikey=9a29db87&s=${input}&page=1`)
+        request.open("GET",`https://www.omdbapi.com/?apikey=9a29db87&s=${input}&page=1`)
 
         request.addEventListener('load', ()=>{
             if(request.status != 200){
