@@ -1,7 +1,6 @@
 class ModalView{
 
     static template(infos){
-        console.log(infos)
         return `<img src=${infos.poster} alt="Poster" class="img-poster">
         <p>
             ${infos.year}   ${infos.runtime}<br>
