@@ -1,5 +1,5 @@
 class ModelInfos{
-    constructor(title, year, runtime, genre, director, actors, plot, poster, tomatoes, imdb, production){
+    constructor(title, year, runtime, genre, director, actors, plot, poster, tomatoes, imdb, production, type){
         this._title = title;
         this._year = year;
         this._runtime = runtime;
@@ -11,6 +11,7 @@ class ModelInfos{
         this._tomatoes = tomatoes;
         this._imdb = imdb;
         this._production = production;
+        this._type = type;
     }
 
     get infos(){
@@ -25,8 +26,10 @@ class ModelInfos{
             poster: this._poster,
             tomatoes: this._tomatoes,
             imdb: this._imdb,
-            production: this._production
+            production: this._production,
+            type: this._type
         }
         return infos
     }
 }
+
