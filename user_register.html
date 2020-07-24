@@ -4,19 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/icon-favicon.png">
 
     <title>Register - ResiliaFlix</title>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="style/header.css">
     <link rel="stylesheet" href="style/footer.css">
     <link rel="stylesheet" href="style/user_register.css">
 
-
-
-    <script defer src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script defer src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
     <script defer src="js/user_register/rg_control.js"></script>
     <script defer src="js/user_register/cep_control.js"></script>
     <script defer src="js/user_register/CepModels.js"></script>
@@ -31,15 +37,20 @@
     <header>
         <!-- Navbar content -->
         <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand" href="# ">
-                <img src="assets/logo.png " width="100 " height="100 " class="d-inline-block align-top " alt=" " loading="lazy "></a>
-            <!--"ResiliaFlix "-->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
+            <!-- Image and text -->
+            <a class=" navbar " href="home.html">
+                <img src="assets/logo.png " width="100 " height="100 " class="d-inline-block align-top " alt=" "
+                    loading="lazy ">
+                <!--"ResiliaFlix "-->
+            </a>
+            <button class="navbar-toggler " type="button " data-toggle="collapse "
+                data-target="#navbarSupportedContent " aria-controls="navbarSupportedContent " aria-expanded="false "
+                aria-label="Toggle navigation ">
+                <span class="navbar-toggler-icon "></span>
+            </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent ">
+                <ul class="navbar-nav mr-auto ">
                     <li class="nav-item active ">
                         <a class="nav-link " href="home.html " style="color:var(--text2-color)">Home <span class="sr-only">(current)</span></a>
                     </li>
@@ -47,7 +58,7 @@
                         <a class="nav-link " href="paginaLogin.html " style="color:var(--text2-color)">Login </a>
                     </li>
                     <li class="nav-item active ">
-                        <a class="nav-link " href="user_register.html " style="color:var(--text2-color)">Register</a>
+                        <a class="nav-link " href="user_register.html " style="color:var(--details-color);">Register</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" style="color:var(--text2-color)">
@@ -60,17 +71,17 @@
                             <a class="dropdown-item" href="pg_horror.html " style="color:var(--text2-color)">Horror</a>
                             <div role="separator" class="dropdown-divider"></div>
                             <a class="dropdown-item " href="pg_comedy.html " style="color:var(--text2-color)">Comedy</a>
-
                         </div>
                     </li>
                     <li class="nav-item active ">
-                        <a class="nav-link " href="pg_contact.html " style="color:var(--text2-color)">Contato</a>
+                        <a class="nav-link " href="pg_contact.html " style="color:var(--text2-color)">Contact</a>
                     </li>
                 </ul>
 
                 <div>
-                    <button class="btn btn-outline-success my-2 my-sm-0 " style="border-color:var(--text2-color);color:var(--text2-color);background-color:var(--bg-color); " type="submit " onclick="window.location.href='search_page.html' "><img src="assets/search.png
-                        " width="40 " height="40 " class="d-inline-block align-top " alt=" " loading="lazy "></button>
+                    <a type="submit " onclick="window.location.href='search_page.html' "><img class="search-img" src="assets/search.png
+                        " width="130" height="auto" class="d-inline-block align-top " alt=" " loading="lazy ">
+                    </a>
                 </div>
             </div>
         </nav>
@@ -86,27 +97,32 @@
                 </div>
                 <div class="form-group col-md-6">
                     <label for="inputEmail4">Email</label>
-                    <input type="email" class="form-control" id="inputEmail4" required placeholder="ironman@resiliaflix.com">
+                    <input type="email" class="form-control" id="inputEmail4" required
+                        placeholder="ironman@resiliaflix.com">
                 </div>
             </div>
             <div class="form-row">
                 <div class="form-group col-md-4">
                     <label for="inputRG">RG</label>
-                    <input type="text" class="form-control" id="inputRG" required placeholder="00.000.000-0" pattern="^\d{2}.\d{3}.\d{3}-\d{1}$" maxlength="12">
+                    <input type="text" class="form-control" id="inputRG" required placeholder="00.000.000-0"
+                        pattern="^\d{2}.\d{3}.\d{3}-\d{1}$" maxlength="12">
                 </div>
                 <div class="form-group col-md-4">
                     <label for="inputPassword4">Password</label>
-                    <input type="password" class="form-control" id="inputPassword4" required placeholder="4 8 15 16 23 42">
+                    <input type="password" class="form-control" id="inputPassword4" required
+                        placeholder="4 8 15 16 23 42">
                 </div>
                 <div class="form-group col-md-4">
                     <label for="inputConfirmPassword4">Confirm Password</label>
-                    <input type="password" class="form-control" id="inputConfirmPassword4" required placeholder="4 8 15 16 23 42">
+                    <input type="password" class="form-control" id="inputConfirmPassword4" required
+                        placeholder="4 8 15 16 23 42">
                 </div>
             </div>
             <div class="form-row">
                 <div class="form-group col-md-4">
                     <label for="inputCEP">CEP</label>
-                    <input type="text" class="form-control" id="inputCEP" required placeholder="00.000-000" pattern="^\d{2}.\d{3}-\d{3}$" maxlength="10">
+                    <input type="text" class="form-control" id="inputCEP" required placeholder="00.000-000"
+                        pattern="^\d{2}.\d{3}-\d{3}$" maxlength="10">
                 </div>
                 <div class="form-group col-md-4">
                     <label for="inputCity">City</label>
@@ -121,7 +137,8 @@
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label for="inputAddress">Address</label>
-                    <input type="text" class="form-control" id="inputAddress" required placeholder="Street, Av, Road, Galaxy" readonly>
+                    <input type="text" class="form-control" id="inputAddress" required
+                        placeholder="Street, Av, Road, Galaxy" readonly>
                 </div>
                 <div class="form-group col-md-3">
                     <label for="inputAddress2">Number</label>
@@ -129,7 +146,8 @@
                 </div>
                 <div class="form-group col-md-3">
                     <label for="inputDistrict">District</label>
-                    <input type="text" class="form-control" id="inputDistrict" required placeholder="District 9" readonly>
+                    <input type="text" class="form-control" id="inputDistrict" required placeholder="District 9"
+                        readonly>
                 </div>
             </div>
 
@@ -139,19 +157,25 @@
                     <label class="form-check-label" for="gridCheck">I agree</label>
                 </div>
             </div>
-            <button type="submit" class="btn btn-primary" id="submitButton" onclick="return validationPassword()">Register</button>
+            <button type="submit" class="btn btn-primary" id="submitButton"
+                onclick="return validationPassword()">Register</button>
             <p class="alert alert-danger hidden mt-3" role="alert" id="passwordFail">Different Passwords</p>
             <p class="alert alert-success hidden mt-3" role="alert" id="sucessRegister">Successfully Registered</p>
             <p class="alert alert-danger hidden mt-3" role="alert" id="invalidCep">Invalid CEP</p>
-            <p class="alert alert-danger hidden mt-3" role="alert" id="requestProblem">Request to ViaCEP fail, try again</p>
+            <p class="alert alert-danger hidden mt-3" role="alert" id="requestProblem">Request to ViaCEP fail, try again
+            </p>
         </form>
     </main>
     <footer>
         <div class="footer">
-            <a href="https://twitter.com/login?lang=pt"><img src="assets/iconetwitter.png" id="twitter" class="icone"></a>
-            <a href="https://www.facebook.com/resilia.br/"><img src="assets/iconeface.png" id="facebook" class="icone"></a>
-            <a href="https://accounts.google.com/ServiceLogin/"><img src="assets/iconeyou.png" id="youtube" class="icone"></a>
-            <a href="https://www.instagram.com/resilia.br/"><img src="assets/iconeinsta.png" id="instagram" class="icone"></a>
+            <a href="https://twitter.com/login?lang=pt"><img src="assets/iconetwitter.png" id="twitter"
+                    class="icone"></a>
+            <a href="https://www.facebook.com/resilia.br/"><img src="assets/iconeface.png" id="facebook"
+                    class="icone"></a>
+            <a href="https://accounts.google.com/ServiceLogin/"><img src="assets/iconeyou.png" id="youtube"
+                    class="icone"></a>
+            <a href="https://www.instagram.com/resilia.br/"><img src="assets/iconeinsta.png" id="instagram"
+                    class="icone"></a>
 
             <span class="copy" style="color: var(--details-color);">&copy; ResiliaFlix 2020 </span>
         </div>
