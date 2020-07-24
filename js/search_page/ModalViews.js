@@ -3,7 +3,7 @@ class ModalView{
     static template(infos){
         return `<img src=${infos.poster} alt="Poster" class="img-poster">
         <p>
-            ${infos.year}   ${infos.runtime}<br>
+            ${infos.year}   ${infos.runtime}  ${infos.type}<br>
             ${infos.genre}<br><br>
             ${infos.plot}<br><br>
             Director: ${infos.director}<br>
