@@ -12,10 +12,6 @@ main {
     color: var(--text2-color);
 }
 
-a {
-    display: inline-flex;
-}
-
 .icon-img {
     height: auto;
     width: 30%;

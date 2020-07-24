@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/icon-favicon.png">
 
     <title>Home - ResiliaFlix</title>
 
@@ -30,8 +31,8 @@
         <!-- Navbar content -->
         <nav class="navbar navbar-expand-lg navbar-light">
             <!-- Image and text -->
-            <a class=" navbar " href="# ">
-                <img src="assets/logo.png " width="100 " height="100 " class="d-inline-block align-top " alt=" "
+            <a class=" navbar " href="home.html">
+                <img src="assets/logo.png" width="100 " height="100 " class="d-inline-block align-top " alt=" "
                     loading="lazy ">
                 <!--"ResiliaFlix "-->
             </a>
@@ -44,7 +45,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent ">
                 <ul class="navbar-nav mr-auto ">
                     <li class="nav-item active ">
-                        <a class="nav-link " href="home.html " style="color:var(--text2-color)">Home</a>
+                        <a class="nav-link " href="home.html" style="color:var(--details-color);">Home</a>
                     </li>
                     <li class="nav-item active ">
                         <a class="nav-link " href="paginaLogin.html " style="color:var(--text2-color)">Login </a>
@@ -52,30 +53,28 @@
                     <li class="nav-item active ">
                         <a class="nav-link " href="user_register.html " style="color:var(--text2-color)">Register</a>
                     </li>
-                    <li class="nav-item active dropdown ">
-                        <a class="nav-link dropdown-toggle " href="pag_category.html " id="navbarDropdown "
-                            role="button " data-toggle="dropdown " aria-haspopup="true " aria-expanded="false "
-                            style="color:var(--text2-color)">
-                            Category
-                        </a>
-                        <div class="dropdown-menu " aria-labelledby="navbarDropdown ">
-                            <a class="dropdown-item " href="pg_action.html ">Action</a>
-                            <a class="dropdown-item " href="pg_triller.html ">Thriller</a>
-                            <a class="dropdown-item " href="pg_horror.html ">Horror</a>
-                            <a class="dropdown-item " href="pg_comedy.html ">Comedy</a>
-
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" style="color:var(--text2-color)">
+                            Category</a>
+                        <div class="dropdown-menu" style="background-color:var(--bg-color);">
+                            <a class="dropdown-item" href="pg_action.html " style="color:var(--text2-color)">Action</a>
+                            <div role="separator" class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="pg_triller.html " style="color:var(--text2-color)">Thriller</a>
+                            <div role="separator" class="dropdown-divider" style="color:var(--text2-color)"></div>
+                            <a class="dropdown-item" href="pg_horror.html " style="color:var(--text2-color)">Horror</a>
+                            <div role="separator" class="dropdown-divider"></div>
+                            <a class="dropdown-item " href="pg_comedy.html " style="color:var(--text2-color)">Comedy</a>
                         </div>
                     </li>
                     <li class="nav-item active ">
-                        <a class="nav-link " href="pg_contact.html " style="color:var(--text2-color)">Contato</a>
+                        <a class="nav-link " href="pg_contact.html " style="color:var(--text2-color)">Contact</a>
                     </li>
                 </ul>
 
                 <div>
-                    <button class="btn btn-outline-success my-2 my-sm-0 "
-                        style="border-color:var(--text2-color);color:var(--text2-color);background-color:var(--bg-color); "
-                        type="submit " onclick="window.location.href='search_page.html' "><img src="assets/search.png
-                        " width="40 " height="40 " class="d-inline-block align-top " alt=" " loading="lazy "></button>
+                    <a type="submit " onclick="window.location.href='search_page.html' "><img class="search-img" src="assets/search.png
+                        " width="130" height="auto" class="d-inline-block align-top " alt=" " loading="lazy ">
+                    </a>
                 </div>
             </div>
         </nav>
@@ -140,7 +139,7 @@
                 <h1 class="d-flex justify-content-start popular-movies title-popular-movie">Award-winning films</h1>
                 <picture class="row d-flex justify-content-around container-movie-poster">
                     <img src="https://m.media-amazon.com/images/M/MV5BN2EyZjM3NzUtNWUzMi00MTgxLWI0NTctMzY4M2VlOTdjZWRiXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_SX300.jpg"
-                        class="img-thumbnail col-12 col-md-3 shadow p-2 mb-5 bg-white roundedmovie-image" alt="...">
+                        class="img-thumbnail col-12 col-md-3 shadow p-2 mb-5 bg-white rounded movie-image" alt="...">
                     <img src="https://m.media-amazon.com/images/M/MV5BMTAwMTU4MDA3NDNeQTJeQWpwZ15BbWU4MDk4NTMxNTIx._V1_SX300.jpg"
                         class="img-thumbnail col-12 col-md-3 shadow p-2 mb-5 bg-white rounded movie-image" alt="...">
                     <img src="https://m.media-amazon.com/images/M/MV5BNWIwODRlZTUtY2U3ZS00Yzg1LWJhNzYtMmZiYmEyNmU1NjMzXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"
@@ -156,14 +155,14 @@
 
     <footer>
         <div class="footer">
-                <a href="https://twitter.com/login?lang=pt "><img src="assets/iconetwitter.png " id="twitter "
-                        class="icone "></a>
-                <a href="https://www.facebook.com/resilia.br/ "><img src="assets/iconeface.png " id="facebook "
-                        class="icone "></a>
-                <a href="https://accounts.google.com/ServiceLogin/ "><img src="assets/iconeyou.png " id="youtube "
-                        class="icone "></a>
-                <a href="https://www.instagram.com/resilia.br/ "><img src="assets/iconeinsta.png " id="instagram "
-                        class="icone "></a>
+            <a href="https://twitter.com/login?lang=pt "><img src="assets/iconetwitter.png " id="twitter "
+                    class="icone "></a>
+            <a href="https://www.facebook.com/resilia.br/ "><img src="assets/iconeface.png " id="facebook "
+                    class="icone "></a>
+            <a href="https://accounts.google.com/ServiceLogin/ "><img src="assets/iconeyou.png " id="youtube "
+                    class="icone "></a>
+            <a href="https://www.instagram.com/resilia.br/ "><img src="assets/iconeinsta.png " id="instagram "
+                    class="icone "></a>
 
             <span class="copy" style="color: var(--details-color); ">&copy; ResiliaFlix 2020 </span>
         </div>
