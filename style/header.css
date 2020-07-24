@@ -18,6 +18,13 @@
     var(--text2-color)*/
 }
 
+body{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 header {
     margin: 0% 0% 8% 0%;
 }
