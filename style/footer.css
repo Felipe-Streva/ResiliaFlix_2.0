@@ -1,0 +1,29 @@
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 0%;
+    width: 100%;
+    height: auto;
+}
+
+.icone {
+    display: flex;
+    margin: 3px 20px 0px 5px;
+    width: 30px;
+}
+
+.icone:hover {
+    height: 35px;
+    width: 35px;
+}
+
+.copy {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-family: Arial;
+    margin: 0%;
+    width: 100%;
+}
