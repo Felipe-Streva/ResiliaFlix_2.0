@@ -1,0 +1,23 @@
+body {
+    background-color: #1b172d;
+}
+
+.container {
+    height: auto;
+    width: 70%;
+}
+
+.card {
+    background-color: #2d2b47;
+    color: #fff;
+}
+
+a {
+    display: inline-flex;
+}
+
+.icon-img {
+    height: auto;
+    width: 30%;
+    margin: 1% 5%;
+}
