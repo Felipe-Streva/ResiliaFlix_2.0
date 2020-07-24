@@ -1,5 +1,5 @@
-body {
-    background-color: #1b172d;
+main {
+    margin-top: 160px;
 }
 
 .container {
@@ -8,8 +8,8 @@ body {
 }
 
 .card {
-    background-color: #2d2b47;
-    color: #fff;
+    background-color: var(--sub-menus);
+    color: var(--text2-color);
 }
 
 a {
