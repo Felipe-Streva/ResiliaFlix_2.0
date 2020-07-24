@@ -21,6 +21,10 @@
     <script defer src="js/search_page/SearchModels.js"></script>
     <script defer src="js/search_page/SearchViews.js"></script>
     <script defer src="js/search_page/SearchController.js"></script>
+    <script defer src="js/ModelInfos/ModelInfos.js"></script>
+    <script defer src="js/search_page/ModalController.js"></script>
+    <script defer src="js/search_page/ModalViews.js"></script>
+
 
 
 </head>
@@ -112,6 +116,24 @@
         </div>
     </footer>
 
+    <div class="modal fade" id="ModalScrollable" tabindex="-1" role="dialog" aria-labelledby="ModalScrollableTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="ModalScrollableTitle"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="template">
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </body>
 
