@@ -23,6 +23,9 @@
     <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
+    <script defer src="js/ModelInfos/ControllerInfos.js"></script>
+    <script defer src="js/ModelInfos/ModelInfos.js"></script>
+    <script defer src="js/ModelInfos/ViewInfos.js"></script>
 </head>
 
 <body>
@@ -150,9 +153,30 @@
                 </picture>
             </div>
         </section>
-
         <!--End show movies and series-->
     </main>
+
+    <!--Start modal-->
+    <div class="modal" id="myModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog"  role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalTitle">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body" id="modalBody">
+              <p>Modal body text goes here.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Save changes</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!--End modal-->
 
     <footer>
         <div class="footer">
@@ -168,6 +192,8 @@
             <span class="copy" style="color: var(--details-color); ">&copy; ResiliaFlix 2020 </span>
         </div>
     </footer>
+
+    
 </body>
 
 </html>

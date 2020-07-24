@@ -32,3 +32,4 @@ class ModelInfos{
         return infos
     }
 }
+
