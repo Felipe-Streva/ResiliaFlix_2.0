@@ -23,7 +23,7 @@ class ModalController{
                     
                 let modalSearch = new ModelInfos(resultJSON.Title, resultJSON.Year, 
                     resultJSON.Runtime, resultJSON.Genre, resultJSON.Director, resultJSON.Actors, resultJSON.Plot,
-                    resultJSON.Poster, rottenTomatoes, resultJSON.imdbRating, resultJSON.Production)
+                    resultJSON.Poster, rottenTomatoes, resultJSON.imdbRating, resultJSON.Production, resultJSON.Type)
         
                 modalTemplate.innerHTML = ModalView.template(modalSearch.infos)
                 modalTitle.innerHTML = ModalView.title(modalSearch.infos)

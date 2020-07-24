@@ -43,11 +43,10 @@
                 aria-label="Toggle navigation ">
                 <span class="navbar-toggler-icon "></span>
             </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent ">
-                <ul class="navbar-nav mr-auto ">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
                     <li class="nav-item active ">
-                        <a class="nav-link " href="home.html " style="color:var(--text2-color)">Home</a>
+                        <a class="nav-link " href="home.html " style="color:var(--text2-color)">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item active ">
                         <a class="nav-link " href="paginaLogin.html " style="color:var(--text2-color)">Login </a>
@@ -113,6 +112,19 @@
                     </div>
                 </div>
             </div>
+    
+            <div>
+                <div class="form-row justify-content-center"> 
+                    <div class="col-md-4">
+                        <div class="form-group pt-2">
+                            <button type="submit" id="remenberMe" class="btn btn-primary btn btn-primary btn-lg btn-block" style="background-color:var(--details-color); border-color:var(--details-color);" onClick="return validateEmail()">Enter</button>
+                            <p class="alert alert-danger hidden mt-3" role="alert" id="passwordFail">Incompatible address</p>
+                            <p class="alert alert-success hidden mt-3" role="alert" id="sucessRegister">Successfully Registered</p>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
         </form>
     </main>
 
