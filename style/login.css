@@ -5,3 +5,12 @@
 .hidden{
     display: none;
 }
+
+.forgotPassword{
+    text-decoration: none;
+    font-weight: bold; 
+}
+
+.form-check-label{
+    font-weight: bold; 
+}
