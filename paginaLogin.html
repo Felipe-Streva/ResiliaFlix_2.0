@@ -89,40 +89,31 @@
                 <div class= "form-row  justify-content-center">
                     <div class="col-md-4">
                         <div class="form-group pt-4">
-                            <label for="exampleInputEmail1">Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="@example.com"
-                                aria-describedby="emailHelp" required>
+                            <label for="exampleInputEmail1" style="color:var(--text2-color)">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" style="border-color:var(--details-color)" placeholder="@example.com" aria-describedby="emailHelp" required>
                         </div>
-                    </div> 
+                    </div>
                 </div>
 
                 <div class="form-row   justify-content-center">
                     <div class="col-md-4"> 
                         <div class="form-group">
-                            <label for="exampleInputPassword1">Password</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="123456"
-                                required>
+                            <label for="exampleInputPassword1" style="color:var(--text2-color)">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" style="border-color:var(--details-color)" placeholder="123456" required>
                         </div>
                     </div>
                 </div>
 
                 <div>
-                    <div class="row  justify-content-center">
-                        <!--button-->
-
-                        <div class="col-4">
+                    <div class="form-row   justify-content-center"> <!--button-->
+                        <div class="col-md-4">
                             <div class="form-group pt-2">
-                                <button type="submit" class="btn btn-primary btn btn-primary btn-lg btn-block"
-                                    onClick="return validateEmail()">Enter</button>
-                                <p class="alert alert-success hidden mt-3" role="alert" id="sucessRegister">Successfully
-                                    Registered</p>
+                                <button type="submit" style="background-color:var(--details-color); border-color:var(--details-color)"   class="btn btn-primary btn btn-primary btn-lg btn-block" onClick="return validateEmail()">Enter</button>
+                                <p class="alert alert-success hidden mt-3" role="alert" id="sucessRegister">Successfully Registered</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="row  justify-content-center">
-                    <!--checkbox-->
-                    <div class="col-2">
 
                 <div class="form-row   justify-content-center">  <!--checkbox-->
                     <div class="col-md-2">  
@@ -131,8 +122,8 @@
                             <label class="form-check-label" for="exampleCheck1" style="color:var(--text2-color)">Remember Me</label>
                         </div>
                     </div>
-                   <div class="col-2">
-                        <!--link forgot password-->
+
+                    <div class="col-md-2"><!--link forgot password-->
                         <div class="form-group">
                             <a href="remember_pass.html" class="forgotPassword" style="color:var(--text2-color)">Forgot Password?</a>   
                         </div>
