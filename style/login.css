@@ -5,3 +5,32 @@
 .hidden{
     display: none;
 }
+
+.forgotPassword{
+    text-decoration: none; /*remove click*/
+    font-weight: bold; 
+}
+
+.form-check-label{
+    font-weight: bold; 
+}
+
+:root {
+    --bg-color: #1b172d;
+    --details-color: #ff4576;
+    --sub-menus: #2d2b47;
+    --text-color: #26223D;
+    --text2-color: #fff;
+    /*
+    Ordem da paleta:
+    #2D2B47;
+    #26223D;
+    #1b172d;
+    #ff4576;
+    #fff;
+    var(--sub-menus);
+    var(--text-color);
+    var(--bg-color);
+    var(--details-color);
+    var(--text2-color)*/
+}
