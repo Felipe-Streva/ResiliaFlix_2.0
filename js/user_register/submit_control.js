@@ -11,7 +11,7 @@ function validationPassword(){
     } else {
         let passwordFail = document.querySelector('#passwordFail')
         passwordFail.classList.remove('hidden')
-        setTimeout(()=>{passwordFail.classList.add('hidden')}, 5000)
+        setTimeout(()=>{passwordFail.classList.add('hidden')}, 3000)
         password.focus()
     }
 
@@ -23,6 +23,6 @@ form.addEventListener('submit', function(event){
     event.stopPropagation()
     let sucessRegister = document.querySelector('#sucessRegister')
     sucessRegister.classList.remove('hidden')
-    setTimeout(()=>{sucessRegister.classList.add('hidden')}, 5000)
+    setTimeout(()=>{sucessRegister.classList.add('hidden')}, 3000)
     form.reset()
 })

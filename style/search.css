@@ -3,6 +3,18 @@
     margin: 30px auto;
 }
 
+.input-group-text {
+    background-color: var(--sub-menus);
+    color: var(--text2-color);
+    /* border-color: var(--details-color); */
+}
+
+/* .form-control {
+    background-color: var(--sub-menus);
+    color: var(--text2-color);
+    /* border-color: var(--details-color);
+} */
+
 .hidden{
     display: none;
 }
@@ -31,4 +43,8 @@
 
 .movie-image:hover{
     transform: scale(1.2);
+}
+
+.img-thumbnail {
+    object-fit: cover;
 }

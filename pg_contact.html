@@ -4,33 +4,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/icon-favicon.png">
 
-    <title>Contato - ResiliaFlix</title>
+    <title>Contact - ResiliaFlix</title>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="style/header.css">
     <link rel="stylesheet" href="style/footer.css">
-    <link rel="stylesheet" href="style/pgContato.css">
+    <link rel="stylesheet" href="style/pg_contact.css">
 </head>
 
 <body>
 
     <header>
         <!-- Navbar content -->
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color:var(--bg-color)">
+        <nav class="navbar navbar-expand-lg navbar-light">
             <!-- Image and text -->
-            <a class=" navbar " href="# ">
-                <img src="assets/logo.png " width="100 " height="100 " class="d-inline-block align-top " alt=" " loading="lazy ">
+            <a class=" navbar " href="home.html">
+                <img src="assets/logo.png " width="100 " height="100 " class="d-inline-block align-top " alt=" "
+                    loading="lazy ">
                 <!--"ResiliaFlix "-->
             </a>
-            <button class="navbar-toggler " type="button " data-toggle="collapse " data-target="#navbarSupportedContent " aria-controls="navbarSupportedContent " aria-expanded="false " aria-label="Toggle navigation ">
-                  <span class="navbar-toggler-icon "></span>
-                </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent ">
-                <ul class="navbar-nav mr-auto ">
+            <button class="navbar-toggler " type="button " data-toggle="collapse "
+                data-target="#navbarSupportedContent " aria-controls="navbarSupportedContent " aria-expanded="false "
+                aria-label="Toggle navigation ">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
                     <li class="nav-item active ">
-                        <a class="nav-link " href="home.html " style="color:var(--text2-color)">Home</a>
+                        <a class="nav-link " href="home.html " style="color:var(--text2-color)">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item active ">
                         <a class="nav-link " href="paginaLogin.html " style="color:var(--text2-color)">Login </a>
@@ -38,26 +42,28 @@
                     <li class="nav-item active ">
                         <a class="nav-link " href="user_register.html " style="color:var(--text2-color)">Register</a>
                     </li>
-                    <li class="nav-item active dropdown ">
-                        <a class="nav-link dropdown-toggle " href="pag_category.html " id="navbarDropdown " role="button " data-toggle="dropdown " aria-haspopup="true " aria-expanded="false " style="color:var(--text2-color)">
-                        Category
-                      </a>
-                        <div class="dropdown-menu " aria-labelledby="navbarDropdown ">
-                            <a class="dropdown-item " href="pg_action.html ">Action</a>
-                            <a class="dropdown-item " href="pg_triller.html ">Thriller</a>
-                            <a class="dropdown-item " href="pg_horror.html ">Horror</a>
-                            <a class="dropdown-item " href="pg_comedy.html ">Comedy</a>
-
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" style="color:var(--text2-color)">
+                            Category</a>
+                        <div class="dropdown-menu" style="background-color:var(--bg-color);">
+                            <a class="dropdown-item" href="pg_action.html " style="color:var(--text2-color)">Action</a>
+                            <div role="separator" class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="pg_triller.html " style="color:var(--text2-color)">Thriller</a>
+                            <div role="separator" class="dropdown-divider" style="color:var(--text2-color)"></div>
+                            <a class="dropdown-item" href="pg_horror.html " style="color:var(--text2-color)">Horror</a>
+                            <div role="separator" class="dropdown-divider"></div>
+                            <a class="dropdown-item " href="pg_comedy.html " style="color:var(--text2-color)">Comedy</a>
                         </div>
                     </li>
                     <li class="nav-item active ">
-                        <a class="nav-link " href="pg_contact.html " style="color:var(--text2-color)">Contato</a>
+                        <a class="nav-link " href="pg_contact.html " style="color:var(--details-color);">Contact</a>
                     </li>
                 </ul>
 
                 <div>
-                    <button class="btn btn-outline-success my-2 my-sm-0 " style="border-color:var(--text2-color);color:var(--text2-color);background-color:var(--bg-color); " type="submit " onclick="window.location.href='pg_search.html' "><img src="assets/search.png
-                        " width="40 " height="40 " class="d-inline-block align-top " alt=" " loading="lazy "></button>
+                    <a type="submit " onclick="window.location.href='search_page.html' "><img class="search-img" src="assets/search.png
+                        " width="130" height="auto" class="d-inline-block align-top " alt=" " loading="lazy ">
+                    </a>
                 </div>
             </div>
         </nav>
@@ -74,10 +80,10 @@
                             <h5 class="card-title">Felipe Streva</h5>
                             <p class="card-text">Mechanical Engineer<br>Web Developer</p>
                             <div class="row">
-                                <img class="icon-img" src="assets/icon-git.png">
-                                <!-- <div class="overlay">
-                                <a><img class="icon-overlay" src="assets/icon-git-pink.png"></a>
-                            </div> -->
+                                <a href="https://github.com/Felipe-Streva"><img class="icon-img github"
+                                        src="assets/git-logo.png"></a>
+                                <a href="https://www.linkedin.com/in/felipe-streva-nunes-41245910a/"><img
+                                        class="icon-img linkedin" src="assets/linkedin-logo.png"></a>
                             </div>
                         </div>
                     </div>
@@ -88,6 +94,12 @@
                         <div class="card-body">
                             <h5 class="card-title">Brunna Mattos</h5>
                             <p class="card-text">Computer Science Student<br>Web Developer</p>
+                            <div class="row">
+                                <a href="https://github.com/brunnamattos/"><img class="icon-img github"
+                                        src="assets/git-logo.png"></a>
+                                <a href="https://www.linkedin.com/in/brunna-mattos/"><img class="icon-img linkedin"
+                                        src="assets/linkedin-logo.png"></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -97,6 +109,12 @@
                         <div class="card-body">
                             <h5 class="card-title">Vanessa Pereira</h5>
                             <p class="card-text">Computer Science Student<br>Web Developer</p>
+                            <div class="row">
+                                <a href="https://github.com/vn-pereira"><img class="icon-img github"
+                                        src="assets/git-logo.png"></a>
+                                <a href="https://www.linkedin.com/in/vanessa-pereira-601304135/"><img
+                                        class="icon-img linkedin" src="assets/linkedin-logo.png"></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -106,6 +124,13 @@
                         <div class="card-body">
                             <h5 class="card-title">Thays Martins</h5>
                             <p class="card-text">Web Developer</p>
+                            <br>
+                            <div class="row">
+                                <a href="https://github.com/ThaysMrtns"><img class="icon-img github"
+                                        src="assets/git-logo.png"></a>
+                                <a href="https://www.linkedin.com/in/thaysmartinshenrique"><img
+                                        class="icon-img linkedin" src="assets/linkedin-logo.png"></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -115,6 +140,12 @@
                         <div class="card-body">
                             <h5 class="card-title">Luiz Eduardo</h5>
                             <p class="card-text">Computer Network Technician<br>Web Developer</p>
+                            <div class="row">
+                                <a href="https://github.com/Eduardo-html"><img class="icon-img github"
+                                        src="assets/git-logo.png"></a>
+                                <a href="https://www.linkedin.com/in/luiz-eduardo-de-oliveira-silva-058764186/"><img
+                                        class="icon-img linkedin" src="assets/linkedin-logo.png"></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -123,13 +154,17 @@
     </main>
 
     <footer>
-        <div class="footer " style="background-color:var(--bg-color); ">
-            <a href="https://twitter.com/login?lang=pt"><img src="assets/iconetwitter.png " id="twitter " class="icone "></a>
-            <a href="https://www.facebook.com/resilia.br/ "><img src="assets/iconeface.png " id="facebook " class="icone "></a>
-            <a href="https://accounts.google.com/ServiceLogin/ "><img src="assets/iconeyou.png " id="youtube " class="icone "></a>
-            <a href="https://www.instagram.com/resilia.br/"><img src="assets/iconeinsta.png " id="instagram " class="icone "></a>
+        <div class="footer">
+            <a class="a-link" href="https://twitter.com/login?lang=pt "><img src="assets/iconetwitter.png "
+                    id="twitter " class="icone "></a>
+            <a class="a-link" href="https://www.facebook.com/resilia.br/ "><img src="assets/iconeface.png "
+                    id="facebook " class="icone "></a>
+            <a class="a-link" href="https://accounts.google.com/ServiceLogin/ "><img src="assets/iconeyou.png "
+                    id="youtube " class="icone "></a>
+            <a class="a-link" href="https://www.instagram.com/resilia.br/ "><img src="assets/iconeinsta.png "
+                    id="instagram " class="icone "></a>
 
-            <span class="copy " style="color: var(--details-color); ">&copy; ResiliaFlix_2020 </span>
+            <span class="copy" style="color: var(--details-color); ">&copy; ResiliaFlix 2020 </span>
         </div>
     </footer>
 

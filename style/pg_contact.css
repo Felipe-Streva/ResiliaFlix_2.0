@@ -1,0 +1,19 @@
+main {
+    margin-top: 160px;
+}
+
+.container {
+    height: auto;
+    width: 70%;
+}
+
+.card {
+    background-color: var(--sub-menus);
+    color: var(--text2-color);
+}
+
+.icon-img {
+    height: auto;
+    width: 30%;
+    margin: 1% 5%;
+}

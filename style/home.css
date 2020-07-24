@@ -1,8 +1,17 @@
+main {
+    margin-top: 130px;
+}
+
 .image-carousel{
     object-position: 0 90%;
     object-fit: cover;
     max-height: 600px;
 }
+
+.carousel-inner {
+    border-bottom: white 8px solid;
+}
+
 .title-popular-movie{
     margin-top: 3%;
     margin-bottom: 1%;
@@ -17,4 +26,19 @@
 .movie-image{
     max-width: 250px;
     min-width: 80px;
+    transition: 0.3s;
+}
+
+.img-thumbnail {
+    object-fit: cover;
+}
+
+.movie-image:hover{
+    transform: scale(1.2);
+}
+
+@media (max-width:750px){
+    .carousel-inner {
+        border-bottom: white 0px solid;
+    }
 }

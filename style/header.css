@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
+
 :root {
-    --bg-color: #1b172d;
+    --bg-color: #0a0811;
     --details-color: #ff4576;
     --sub-menus: #2d2b47;
-    --text-color: #26223D;
+    --text-color: #1b182b;
     --text2-color: #fff;
     /*
     Ordem da paleta:
@@ -18,10 +20,46 @@
     var(--text2-color)*/
 }
 
+body{
+    font-family: 'ABeeZee', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text2-color);
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 header {
+    font-family: 'ABeeZee', sans-serif;
+    background-color: var(--text-color);
+    position: fixed;
+    top: 0px;
+    z-index: 2500;
+    width: 100%;
     margin: 0% 0% 8% 0%;
 }
 
 main {
     margin-top: 124px;
+}
+
+.search-img {
+    object-fit: cover;
+    transition: 0.3s;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.search-img:hover{
+    transform: scale(1.1);
+}
+
+.nav-item {
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.nav-item:hover {
+    transform: scale(1.1);
 }
