@@ -2,7 +2,7 @@ class Info{
    
     static info(){
         //imdbID poster list
-        let imdbIDPoster= ["tt5421602", "tt8688814", "tt11057594", "tt9580138",
+        let imdbIDPoster= ["tt8688814", "tt5421602", "tt9580138", "tt11057594", 
         "tt0903747", "tt0944947", "tt5180504", "tt2357547", "tt0120737",
         "tt2980516", "tt0109830", "tt0451279"];
 
