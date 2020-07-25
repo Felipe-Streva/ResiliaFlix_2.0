@@ -22,7 +22,7 @@ class Info{
                 requisicao.addEventListener("load", () => {
                     let info = JSON.parse(requisicao.responseText);
 
-                    let rottenTomatoes = 0
+                    let rottenTomatoes = "-"
                     for(let i = 0; i<info.Ratings.length;i++){
                         if(info.Ratings[i].Source=="Rotten Tomatoes"){
                             rottenTomatoes = info.Ratings[i].Value

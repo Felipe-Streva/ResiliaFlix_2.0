@@ -13,7 +13,7 @@ class ModalController{
                 let modalTitle = document.querySelector("#ModalScrollableTitle")
                 let modalTemplate = document.querySelector("#template")
 
-                let rottenTomatoes = 0
+                let rottenTomatoes = '-'
 
                 for(let i = 0; i<resultJSON.Ratings.length;i++){
                     if(resultJSON.Ratings[i].Source=="Rotten Tomatoes"){
