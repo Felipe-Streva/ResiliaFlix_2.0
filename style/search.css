@@ -48,3 +48,18 @@
 .img-thumbnail {
     object-fit: cover;
 }
+
+.modal-header{
+    background-color: var(--text-color);
+}
+
+.modal-body{
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-footer{
+    background-color: var(--text-color);
+}

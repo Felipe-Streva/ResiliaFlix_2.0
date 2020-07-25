@@ -37,6 +37,21 @@ main {
     transform: scale(1.2);
 }
 
+.modal-header{
+    background-color: var(--text-color);
+}
+
+.modal-body{
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-footer{
+    background-color: var(--text-color);
+}
+
 @media (max-width:750px){
     .carousel-inner {
         border-bottom: white 0px solid;
