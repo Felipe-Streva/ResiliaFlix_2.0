@@ -9,3 +9,13 @@
 main{
     margin-top: 180px;
 }
+
+.btn-bg-color{
+    background-color:  var(--details-color);
+    border-color:  var(--details-color);
+}
+
+.btn-bg-color:hover{
+    background-color:  rgba(255,45,76,0.6);
+    border-color:  rgba(255,45,76,0.6);
+}
