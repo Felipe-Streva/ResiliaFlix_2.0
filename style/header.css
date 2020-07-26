@@ -65,3 +65,11 @@ main {
 .nav-item:hover {
     transform: scale(1.1);
 }
+
+.dropdown-item:hover{
+    background-color:var(--sub-menus) ;
+}
+
+.movie-image{
+    cursor: pointer;
+}
