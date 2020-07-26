@@ -1,5 +1,8 @@
 main {
     margin-top: 130px;
+    background-image: url(/assets/it-background-img.jpg);
+    object-fit: cover;
+    background-repeat: no-repeat;
 }
 
 .image-carousel{
@@ -10,6 +13,18 @@ main {
 
 .carousel-inner {
     border-bottom: white 8px solid;
+}
+
+.section-body {
+    height: auto;
+    width: 85%;
+    margin: 2% auto;
+    background: rgba(10, 8, 17, 0.7);
+    padding: 1% 3% 3% 3%;
+}
+
+.aboutus-text {
+    text-align: justify;
 }
 
 .title-popular-movie{
@@ -35,6 +50,7 @@ main {
 
 .movie-image:hover{
     transform: scale(1.2);
+    z-index: 1;
 }
 
 .modal-header{
@@ -53,6 +69,16 @@ main {
 }
 
 @media (max-width:750px){
+    main {
+        background-image: none;
+    }
+
+    .section-body {
+        background: rgba(17, 13, 29);
+        margin: 5% auto;
+        padding: 1% 3% 3% 3%;
+    }
+    
     .carousel-inner {
         border-bottom: white 0px solid;
     }

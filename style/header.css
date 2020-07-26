@@ -28,6 +28,7 @@ body{
     min-height: 100vh;
     flex-direction: column;
     justify-content: space-between;
+    z-index: 2;
 }
 
 header {
@@ -42,6 +43,7 @@ header {
 
 main {
     margin-top: 124px;
+    padding-bottom: 3%;
 }
 
 .search-img {
