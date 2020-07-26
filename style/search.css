@@ -43,6 +43,7 @@
 
 .movie-image:hover{
     transform: scale(1.2);
+    z-index: 1;
 }
 
 .img-thumbnail {
