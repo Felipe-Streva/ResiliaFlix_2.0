@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="assets/icon-favicon.png">
-    
-    <title>Login</title>
-    
+
+    <title>Thriller - ResiliaFlix</title>
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="style/header.css">
     <link rel="stylesheet" href="style/footer.css">
-    <link rel="stylesheet" href="style/login.css">
+    <link rel="stylesheet" href="style/home.css">
 
     <script defer src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -23,7 +23,9 @@
     <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
-    <script defer src="js/login_pages/loginPages.js"></script>
+    <script defer src="js/ModelInfos/ControllerInfosThriller.js"></script>
+    <script defer src="js/ModelInfos/ModelInfos.js"></script>
+    <script defer src="js/ModelInfos/ViewInfos.js"></script>
 </head>
 
 <body>
@@ -46,22 +48,22 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active ">
-                        <a class="nav-link " href="home.html " style="color:var(--text2-color)">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link " href="home.html " style="color:var(--text2-color);">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item active ">
-                        <a class="nav-link " href="paginaLogin.html " style="color:var(--details-color);">Login </a>
+                        <a class="nav-link " href="paginaLogin.html " style="color:var(--text2-color);">Login </a>
                     </li>
                     <li class="nav-item active ">
                         <a class="nav-link " href="user_register.html " style="color:var(--text2-color)">Register</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" style="color:var(--text2-color)">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" style="color:var(--details-color)">
                             Category</a>
                         <div class="dropdown-menu" style="background-color:var(--bg-color);">
                             <a class="dropdown-item" href="pg_action.html " style="color:var(--text2-color)">Action</a>
                             <div role="separator" class="dropdown-divider"></div>
                             <a class="dropdown-item" href="pg_thriller.html " style="color:var(--text2-color)">Thriller</a>
-                            <div role="separator" class="dropdown-divider" style="color:var(--text2-color)"></div>
+                            <div role="separator" class="dropdown-divider"></div>
                             <a class="dropdown-item" href="pg_horror.html " style="color:var(--text2-color)">Horror</a>
                             <div role="separator" class="dropdown-divider"></div>
                             <a class="dropdown-item " href="pg_comedy.html " style="color:var(--text2-color)">Comedy</a>
@@ -87,75 +89,63 @@
         </nav>
 
     </header>
-    <!--input-->
     <main>
-        <form>
-            <div class="container"> <!--input-->
-                <h1 class="title text-center pt-5" style="color:var(--text2-color)">Enter</h1>
-                <div class= "form-row  justify-content-center">
-                    <div class="col-md-4">
-                        <div class="form-group pt-4">
-                            <label for="exampleInputEmail1" style="color:var(--text2-color)">Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" style="border-color:var(--details-color)" placeholder="@example.com" aria-describedby="emailHelp" required>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="form-row   justify-content-center">
-                    <div class="col-md-4"> 
-                        <div class="form-group">
-                            <label for="exampleInputPassword1" style="color:var(--text2-color)">Password</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1" style="border-color:var(--details-color)" placeholder="123456" required>
-                        </div>
-                    </div>
-                </div>
-
-                <div>
-                    <div class="form-row   justify-content-center"> <!--button-->
-                        <div class="col-md-4">
-                            <div class="form-group pt-2">
-                                <button type="submit" class="btn btn-primary btn btn-primary btn-lg btn-block btn-bg-color" onClick="return validateEmail()">Enter</button>
-                                <p class="alert alert-success hidden mt-3" role="alert" id="sucessRegister">Logged</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="form-row   justify-content-center">  <!--checkbox-->
-                    <div class="col-md-2">  
-                        <div class="form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1" style="color:var(--details-color)">
-                            <label class="form-check-label" for="exampleCheck1" style="color:var(--text2-color)">Remember Me</label>
-                        </div>
-                    </div>
-
-                    <div class="col-md-2"><!--link forgot password-->
-                        <div class="form-group">
-                            <a href="remember_pass.html" class="forgotPassword" style="color:var(--text2-color)">Forgot Password?</a>   
-                        </div>
-                    </div>       
-                </div>
-            </div> 
-        </form>
+        <!--Start show movies and series-->
+        <section>
+            <div class="container">
+                <h1 class="d-flex justify-content-start popular-movies title-popular-movie">Thriller</h1>
+                <picture class="row d-flex justify-content-around container-movie-poster">
+                    <img src="https://m.media-amazon.com/images/M/MV5BMjIxMjQyMTc3Nl5BMl5BanBnXkFtZTcwMTA1MDUzMw@@._V1_SX300.jpg"
+                        class="img-thumbnail col-12 col-md-3 shadow p-2 mb-5 bg-white rounded movie-image" id="imgPoster" data-toggle="modal" data-target="#myModal" alt="...">
+                    <img src="https://m.media-amazon.com/images/M/MV5BYWZjMjk3ZTItODQ2ZC00NTY5LWE0ZDYtZTI3MjcwN2Q5NTVkXkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_SX300.jpg"
+                        class="img-thumbnail col-12 col-md-3 shadow p-2 mb-5 bg-white rounded movie-image" id="imgPoster" data-toggle="modal" data-target="#myModal" alt="...">
+                    <img src="https://m.media-amazon.com/images/M/MV5BZTliNWJhM2YtNDc1MC00YTk1LWE2MGYtZmE4M2Y5ODdlNzQzXkEyXkFqcGdeQXVyMzY0MTE3NzU@._V1_SX300.jpg"
+                        class="img-thumbnail col-12 col-md-3 shadow p-2 mb-5 bg-white rounded movie-image" id="imgPoster" data-toggle="modal" data-target="#myModal" alt="...">
+                    <img src="https://m.media-amazon.com/images/M/MV5BNDM2YjliZDUtZWUzYi00ZDY4LWJlMTEtZGZiZDViZjJiMTllXkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_SX300.jpg"
+                        class="img-thumbnail col-12 col-md-3 shadow p-2 mb-5 bg-white rounded movie-image" id="imgPoster" data-toggle="modal" data-target="#myModal" alt="...">
+                </picture>
+            </div>
+        </section>
+        <!--End show movies and series-->
     </main>
 
-
+    <!--Start modal-->
+    <div class="modal" id="myModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog"  role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalTitle">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body" id="modalBody">
+              <p>Modal body text goes here.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!--End modal-->
 
     <footer>
         <div class="footer">
-            <a href="https://twitter.com/login?lang=pt "><img src="assets/iconetwitter.png " id="twitter "
+            <a href="https://twitter.com/login?lang=pt "><img src="assets/iconetwitter.png " id="twitter"
                     class="icone "></a>
-            <a href="https://www.facebook.com/resilia.br/ "><img src="assets/iconeface.png " id="facebook "
+            <a href="https://www.facebook.com/resilia.br/ "><img src="assets/iconeface.png " id="facebook"
                     class="icone "></a>
-            <a href="https://accounts.google.com/ServiceLogin/ "><img src="assets/iconeyou.png " id="youtube "
+            <a href="https://accounts.google.com/ServiceLogin/ "><img src="assets/iconeyou.png " id="youtube"
                     class="icone "></a>
-            <a href="https://www.instagram.com/resilia.br/ "><img src="assets/iconeinsta.png " id="instagram "
+            <a href="https://www.instagram.com/resilia.br/ "><img src="assets/iconeinsta.png " id="instagram"
                     class="icone "></a>
 
-            <span class="copy " style="color: var(--details-color); ">&copy; ResiliaFlix 2020 </span>
+            <span class="copy" style="color: var(--details-color); ">&copy; ResiliaFlix 2020 </span>
         </div>
     </footer>
 
+    
 </body>
 
 </html>
