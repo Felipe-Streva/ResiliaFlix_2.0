@@ -1,6 +1,6 @@
 main {
     margin-top: 130px;
-    background-image: url(/assets/it-background-img.jpg);
+    background-image: url(assets/it-background-img.jpg);
     object-fit: cover;
     background-repeat: no-repeat;
 }
