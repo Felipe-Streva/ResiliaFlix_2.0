@@ -23,6 +23,6 @@ form.addEventListener('submit', function(event){
     event.stopPropagation()
     let sucessRegister = document.querySelector('#sucessRegister')
     sucessRegister.classList.remove('hidden')
-    setTimeout(()=>{sucessRegister.classList.add('hidden')}, 3000)
-    form.reset()
+    setTimeout(()=>{sucessRegister.classList.add('hidden')}, 2000)
+    setTimeout(()=>{window.location.href = 'home.html'}, 2000)
 })
