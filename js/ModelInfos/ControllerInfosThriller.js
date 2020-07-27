@@ -15,7 +15,7 @@ class InfoThriller{
         for(let i = 0; i < imagePoster.length; i++){
             imagePoster[i].onclick = function() {
                 let requisicao = new XMLHttpRequest();
-                requisicao.open("GET", `https://www.omdbapi.com/?i=${imdbIDPoster[i]}&apikey=f2a7ff8a`, false);
+                requisicao.open("GET", `https://www.omdbapi.com/?i=${imdbIDPoster[i]}&apikey=f2a7ff8a`);
                 
                 requisicao.addEventListener("load", () => {
                     let info = JSON.parse(requisicao.responseText);
