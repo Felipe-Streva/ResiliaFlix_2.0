@@ -1,13 +1,12 @@
 main {
     margin-top: 130px;
-    background-image: url(../assets/it-background-img.jpg);
+    background-image: url(../assets/it-background-img.png);
     object-fit: cover;
     background-repeat: no-repeat;
 }
 
 .image-carousel{
     object-position: 0 90%;
-    object-fit: cover;
     max-height: 600px;
 }
 
@@ -25,6 +24,12 @@ main {
 
 .aboutus-text {
     text-align: justify;
+}
+
+.video-frame {
+    border: 5px solid white;
+    width: 600px;
+    height: 350px;
 }
 
 .title-popular-movie{
@@ -81,5 +86,11 @@ main {
     
     .carousel-inner {
         border-bottom: white 0px solid;
+    }
+
+    .video-frame {
+        border: 2px solid white;
+        width: 100%;
+        height: auto;
     }
 }
