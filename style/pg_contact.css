@@ -17,3 +17,7 @@ main {
     width: 30%;
     margin: 1% 5%;
 }
+
+.icon-img:hover {
+    transform: scale(1.05);
+}
