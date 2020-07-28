@@ -46,6 +46,10 @@ main {
     padding-bottom: 3%;
 }
 
+.navbar-toggler{
+    background: linear-gradient(90deg,#c51621,#6d0e7f);
+}
+
 .search-img {
     object-fit: cover;
     transition: 0.3s;
