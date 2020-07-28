@@ -1,5 +1,6 @@
 .form-control {
     color: #111111;
+    border-color: var(--details-color);
 }
 
 .hidden {
@@ -18,4 +19,19 @@ main{
 .btn-bg-color:hover{
     background-color:  rgba(255,45,76,0.6);
     border-color:  rgba(255,45,76,0.6);
+}
+
+.modal-header{
+    background-color: var(--text-color);
+}
+
+.modal-body{
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-footer{
+    background-color: var(--text-color);
 }

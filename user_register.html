@@ -162,17 +162,8 @@
             <div class="form-group">
                 <div class="form-check">
                     <input class="form-check-input" type="checkbox" id="gridCheck" required>
-                    <label class="form-check-label" for="gridCheck">I agree to <a href="#"
+                    <label class="form-check-label" for="gridCheck">I agree to <a href="#modalTerms" data-toggle="modal" data-target="#modalTerms"
                             style="color: var(--details-color);">Terms</a></label>
-                    <!-- Texto para o modal:
-                    <h1>Terms of use</h1>
-                    <p>By accepting our terms of use you agree to:<br>
-                        - Sell your soul to ResiliaFlix;<br>
-                        - Do not share our content improperly;<br>
-                        - Not having bad conduct with other users;<br>
-                        - Do not speak ill of k-dramas and animes;<br>
-                        - Give a little star to our project on <a href="https://github.com/Felipe-Streva/ResiliaFlix_2.0"
-                    style="color: var(--details-color);">GitHub</a><p> -->
                 </div>
             </div>
             <button type="submit" class="btn btn-primary btn-bg-color" id="submitButton"
@@ -183,6 +174,34 @@
             <p class="alert alert-danger hidden mt-3" role="alert" id="requestProblem">Request to ViaCEP fail, try again
             </p>
         </form>
+
+        <section>
+            <div class="modal" tabindex="-1" role="dialog" id="modalTerms">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title">Terms of use</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body">
+                    <p>By accepting our terms of use you agree to:<br>
+                        - Sell your soul to ResiliaFlix;<br>
+                        - Do not share our content improperly;<br>
+                        - Not having bad conduct with other users;<br>
+                        - Do not speak ill of Marvel and animes;<br>
+                        - Give a little star to our project on <a target="_blank" href="https://github.com/Felipe-Streva/ResiliaFlix_2.0"
+                    style="color: var(--details-color);">GitHub</a></p>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+
     </main>
     <footer>
         <div class="footer">
